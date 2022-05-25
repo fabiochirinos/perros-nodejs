@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 1.5em;
+}
+
+ul,
+li {
+  display: inline;
+}
+
+img {
+  width: 500px;
+}
