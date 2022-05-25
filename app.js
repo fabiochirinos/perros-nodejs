@@ -2,6 +2,8 @@ const express = require("express");
 const pug = require("pug");
 const app = express();
 
+const puerto = process.env.PORT || 3000;
+
 let perros_array = [
     { raza: "Doberman", texto: "Perro de ataque", imagen: "doberman.jpg" },
     { raza: "Dachsund", texto: "Perro de caza", imagen: "dachsund.jpg" },
@@ -44,6 +46,6 @@ app.use((req, res) => {
     res.render("404.pug", { texto: error });
 });
 
-app.listen(3000, () => {
-    console.log("Servidor en el puerto 3000");
-})
+app.listen(puerto, () => {
+    console.log("Servidor en el puerto ",puerto);
+});
